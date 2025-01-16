@@ -1471,10 +1471,14 @@ let travel ={
     let area = document.getElementById('areaId');
     let mainTitleName = document.getElementById('mainTitleName');
     
+    
 
 
     area.addEventListener('change',function (e){
         let select = e.target.value;
-        mainTitleName.textContent = select
+        mainTitleName.textContent = select;
+        let str =''
+        let travelLen = travel.records.length;
+        for(let i =0; i<)
     },false);
     
