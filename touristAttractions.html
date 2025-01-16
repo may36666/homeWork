@@ -8,29 +8,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <body>
     <header
-      class="bg-no-repeat bg-cover h-[380px]"
-      style="background-image: url(./assets/the-urban-landscape-1698285.png)"
+    class="bg-no-repeat bg-cover h-[380px]"
+    style="background-image: url(./assets/the-urban-landscape-1698285.png)"
     >
-      <div class="container mx-auto">
-        <div
-          class="text-white text-center text-[40px] tracking-[3.89px] pt-[4.3%]"
-        >
-          高雄旅遊資訊
+    <div class="container mx-auto">
+      <div
+      class="text-white text-center text-[40px] tracking-[3.89px] pt-[4.3%]"
+      >
+      高雄旅遊資訊
         </div>
         <div class="mt-[11%] flex justify-center">
           <form
-            action=""
-            method="post"
-            class="w-[45%] border-[3px] border-white rounded-sm relative"
+          action=""
+          method="post"
+          class="w-[45%] border-[3px] border-white rounded-sm relative"
           >
-            <select
-              name=""
-              id="area"
-              class="h-full opacity-75 font-black appearance-none p-3 w-full"
-            >
-              <option value="">--請選擇行政區--</option>
-              <option value="前金區">前金區</option>
-              <option value="新興區">新興區</option>
+          <select
+          id="areaId"
+          class="h-full opacity-75 font-black appearance-none p-3 w-full outline-none"
+          >
+          <option value="">--請選擇行政區--</option>
+          <option value="前金區">前金區</option>
+          <option value="新興區">新興區</option>
               <option value="鹽埕區">鹽埕區</option>
               <option value="左營區">左營區</option>
               <option value="楠梓區">楠梓區</option>
@@ -76,36 +75,36 @@
 
         <div class="flex justify-center mt-[4%]">
           <div
-            class="w-[80%] h-[100px] bg-white rounded-md shadow pt-2 pl-5 font-black"
+          class="w-[80%] h-[100px] bg-white rounded-md shadow pt-2 pl-5 font-black"
           >
-            熱門行政區
+          熱門行政區
             <div class="mt-[10px] h-[50%] px-5 lg:space-x-[20px] lg:text-xl">
               <button
-                type="button"
-                class="border-0 rounded-md bg-[#8A82CC] text-white w-[20%] lg:w-[16%] h-full"
+              type="button"
+              class="border-0 rounded-md bg-[#8A82CC] text-white w-[20%] lg:w-[16%] h-full"
                 value="苓雅區"
-              >
+                >
                 苓雅區
               </button>
               <button
-                type="button"
-                class="border-0 rounded-md bg-[#FFA782] text-white w-[20%] lg:w-[16%] h-full"
-                value="三民區"
+              type="button"
+              class="border-0 rounded-md bg-[#FFA782] text-white w-[20%] lg:w-[16%] h-full"
+              value="三民區"
               >
-                三民區
-              </button>
-              <button
-                type="button"
-                class="border-0 rounded-md bg-[#F5D105] text-white w-[20%] lg:w-[16%] h-full"
+              三民區
+            </button>
+            <button
+            type="button"
+            class="border-0 rounded-md bg-[#F5D105] text-white w-[20%] lg:w-[16%] h-full"
                 value="新興區"
-              >
+                >
                 新興區
               </button>
               <button
-                type="button"
-                class="border-0 rounded-md bg-[#559AC8] text-white w-[20%] lg:w-[16%] h-full"
+              type="button"
+              class="border-0 rounded-md bg-[#559AC8] text-white w-[20%] lg:w-[16%] h-full"
                 value="鹽埕區"
-              >
+                >
                 鹽埕區
               </button>
             </div>
@@ -113,25 +112,31 @@
         </div>
       </div>
     </header>
-<div class="container mx-auto my-[6%] flex flex-col relative">
-    <div class="flex justify-center border-2 rounded-full w-[30px] h-[30px] absolute left-[49%] bg-white mt-[46px]"><img src="./assets/icons_down.png" alt="" class="p-[6px]"></div>
-    <div class="border-t-[2px] border-[#559AC8] border-dashed mt-[60px] w-[90%] mx-auto"></div>
-</div>
+    <div class="container mx-auto my-[6%] flex flex-col relative">
+      <div
+      class="flex justify-center border-2 rounded-full w-[30px] h-[30px] absolute left-[49%] bg-white mt-[46px]"
+      >
+      <img src="./assets/icons_down.png" alt="" class="p-[6px]" />
+    </div>
+    <div
+    class="border-t-[2px] border-[#559AC8] border-dashed mt-[60px] w-[90%] mx-auto"
+    ></div>
+    </div>
     <main class="container mx-auto">
-        <div class="text-center text-3xl" id="">三民區</div> 
-        <div class="grid grid-cols-2 gap-6" id="">
-          <div class="">
+      <div class="text-center text-3xl" id="mainTitleName"></div>
+      <div class="grid grid-cols-2 gap-6" id="">
+        <div class="">
+          <div></div>
+          <div>
             <div></div>
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+            <div></div>
+            <div></div>
           </div>
-
-        </div>       
+        </div>
+      </div>
     </main>
-
+    
+    
     <script src="./js/all.js"></script>
   </body>
 </html>

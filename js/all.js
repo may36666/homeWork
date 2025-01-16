@@ -1,3 +1,4 @@
+
 let travel ={
     help: "https://data.kcg.gov.tw/api/3/action/help_show?name=datastore_search",
     success: true,
@@ -1467,4 +1468,13 @@ let travel ={
     }
     }
 
+    let area = document.getElementById('areaId');
+    let mainTitleName = document.getElementById('mainTitleName');
+    
+
+
+    area.addEventListener('change',function (e){
+        let select = e.target.value;
+        mainTitleName.textContent = select
+    },false);
     
