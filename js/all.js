@@ -23,10 +23,10 @@ let travel ={
     Parkinginfo_px: "0",
     Name: "中都愛河濕地公園",
     Level: null,
-    Picture1: "https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E4%B8%89%E6%B0%91%E5%8D%80/%E4%B8%AD%E9%83%BD%E6%BF%95%E5%9C%B0%E5%85%AC%E5%9C%9207.jpg",
+    Picture1:"https://raw.githubusercontent.com/hexschool/KCGTravel/master/image/%E4%B8%89%E6%B0%91%E5%8D%80/%E4%B8%AD%E9%83%BD%E6%BF%95%E5%9C%B0%E5%85%AC%E5%9C%9207.jpg",
     Toldescribe: "串起高雄城市生態綠廊的中都愛河濕地公園座落於愛河南側的十全與九如路之間，全長約2.5公里，佔地達七千餘平方公尺。為了打造與市民生活融合的「水岸花香的永續生態城市」，愛河濕地公園以生態工法構築邊坡，重現早期溼地豐富生態棲息環境。園區設置原木建築為遊客解說中心，另有木造涼亭、吊橋、潮汐親水平台以及漂流木為設計主軸的燈具座椅等設施，質樸中深具原野氣息，而仿自然的複層林相植栽也使市區重現豐富林相。悠遊於綠油油曲折玲瓏的河岸可見各種水鳥飛翔駐留、紅樹林和濕地更使愛河重現盎然生機。由於中都濕地公園打造出兼具自然生態、教育解說及民眾休憩等眾多功能，又完整呈現愛河沿岸多樣性的風貌，2012年榮獲「全球卓越建設獎」殊榮，也因此有高雄都會桃花源的美稱。",
     Changetime: "2015-06-02T13:59:00",
-    Tel: "886-7-7995678",
+    Tel:"886-7-7995678",
     Picdescribe1: "中都愛河濕地公園",
     Travellinginfo: "",
     _id: 2,
@@ -1470,15 +1470,26 @@ let travel ={
 
     let area = document.getElementById('areaId');
     let mainTitleName = document.getElementById('mainTitleName');
-    
+    let travelLen = travel.result.records.length;
+    let mainListId = document.getElementById('mainListId');
     
 
 
     area.addEventListener('change',function (e){
         let select = e.target.value;
-        mainTitleName.textContent = select;
-        let str =''
-        let travelLen = travel.records.length;
-        for(let i =0; i<)
+        mainTitleName.textContent = select;      
     },false);
+
+    area.addEventListener('change',updateMainList,false);
+
     
+    function updateMainList(e){
+        let select = e.target.value;
+        let str = '';
+        for(let i = 0 ; i <travelLen; i++){
+            if(select == travel.result.records[i].Zone){
+                str += '<div class="h-[300px] border-2 shadow w-[90%] text-[6px] md:text-base "><img src='+ travel.result.records.Picture1 +'  class ="h-1/2 w-full "><ul class="p-3 space-y-5 "><li class="flex flex-row space-x-2"><img src="./assets/icons_clock.png" alt="clock"><span>'+travel.result.records[i].Opentime+'</span></li><li class="flex flex-row space-x-2"><img src="./assets/icons_pin.png" alt="pin"><span>'+travel.result.records[i].Add+'</span></li>'+'<li class="grid grid-cols-4 pl-1"><div class="col-span-2 flex flex-row space-x-2"><img src="./assets/icons_phone.png" alt=""><span>'+travel.result.records[i].Tel+'</span></div><div class="col-span-2 flex flex-row space-x-2"><img src="./assets/icons_tag.png" alt=""><span>'+travel.result.records[i].Ticketinfo+'</span></div></li></ul></div>';
+            }
+         }
+         mainListId.innerHTML =str; 
+    }
