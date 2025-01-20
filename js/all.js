@@ -1472,6 +1472,7 @@ let travel ={
     let mainTitleName = document.getElementById('mainTitleName');
     let travelLen = travel.result.records.length;
     let mainListId = document.getElementById('mainListId');
+    let hotBotton = document.getElementById('hotButton')
     
 
 
@@ -1493,3 +1494,13 @@ let travel ={
          }
          mainListId.innerHTML =str; 
     }
+
+    hotBotton.addEventListener('click',function(e){
+        if(e.target.nodeName !== 'BUTTON'){return};
+        let select = e.target.value;
+        mainTitleName.textContent = select; 
+    },false);
+
+    hotBotton.addEventListener('click',updateMainList);
+
+    
