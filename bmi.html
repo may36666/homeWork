@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI</title>
-  </head>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <body>
-    <header class="bg-[#424242]">
-      <div class="container mx-auto">
-        <div class="p-[50px] flex flex-row">
-          <div><img src="./assets/BMICLogo.png" alt="" /></div>
-          <div class="ml-[100px]">
-            <form action=""  class="flex flex-col">
-                <label for="">身高 cm</label>
-                <input type="text">
-                <label for="">身高 cm</label>
-                <input type="text">
-            </form>
-          </div>
-          <div class="">
-            <div class="w-[50px] h-[50px] rounded-full bg-yellow-400"></div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+  <header class="bg-[#424242]">
+    <div class="container mx-auto">
+      <div class="py-[50px] flex flex-row justify-evenly">
+        <div><img src="./assets/BMICLogo.png" alt="" /></div>
+        <div class="">
+          <form action="" class="flex flex-col text-[#FFD366]">
+            <label for="height" class="text-[18px] bg-[#424242]">身高 cm</label>
+            <input name="height" id="height" type="text" placeholder="請輸入身高"
+              class="bg-[#424242] text-[24px] text-white pl-3 border-2 rounded-md border-[#FFD366] outline-none">
+            <label for="weight" class="text-[18px] mt-[20px]">體重 kg</label>
+            <input type="text" name="weight" id="weight" placeholder="請輸入體重"
+              class="bg-[#424242] text-[24px] text-white pl-3 border-2 rounded-md border-[#FFD366] outline-none">
+          </form>
+        </div>
+        <div class="">
+          <button type="button">
+            <div
+              class="w-[100px] h-[100px] rounded-full bg-[#FFD366] hover:bg-gray-300 text-center text-[25px] align-middle py-[35%]">
+              看結果</div>
+          </button>
         </div>
       </div>
-    </header>
-  </body>
+    </div>
+  </header>
+
+  <main class="my-[50px] ">
+    <div class="container mx-auto">
+      <div class="text-center text-[24px]">
+        BMI紀錄
+      </div>
+      <div id="bmiList" class="">
+        <div class="flex flex-row bg-white shadow w-1/2 mx-[25%] ">
+          <div class="bg-[#86D73F] shadow "><span class="invisible">1</span></div>
+          <div class="flex flex-row  py-2 mx-[1%]">
+            <span class="text-[20px]">理想</span>
+            <div class="space-x-2">
+              <span class="text-[12px]">BMI</span>
+              <span class="text-[20px]">20.90</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-[12px]">weight</span>
+              <span class="text-[20px]">70kg</span>
+              
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-[12px]">height</span>
+              <span class="text-[20px]">180cm</span>
+              
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="text-[12px]">06-19-2017</span>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-[#FFD366] absolute bottom-0 left-0 right-0">
+    <div class="container mx-auto  py-5 flex justify-center">
+      <img src="./assets/BMICLogo-2.png" alt="" class="text-[#FFD366]">
+    </div>
+  </footer>
+</body>
+
 </html>
