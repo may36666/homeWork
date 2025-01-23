@@ -1468,6 +1468,7 @@ let travel ={
     }
     }
 
+    //旅遊網
     let area = document.getElementById('areaId');
     let mainTitleName = document.getElementById('mainTitleName');
     let travelLen = travel.result.records.length;
@@ -1503,6 +1504,6 @@ let travel ={
 
     hotBotton.addEventListener('click',updateMainList);
 
-
+  
     
     
