@@ -1,90 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI</title>
-  </head>
-  <script src="https://cdn.tailwindcss.com"></script>
 
-  <body>
-    <header class="bg-[#424242]">
-      <div class="container mx-auto">
-        <div class="py-[50px] flex flex-row justify-evenly">
-          <div><img src="./assets/BMICLogo.png" alt="" /></div>
-          <div class="">
-            <form action="" class="flex flex-col text-[#FFD366]">
-              <label for="height" class="text-[18px] bg-[#424242]"
-                >身高 cm</label
-              >
-              <input
-                name="height"
-                id="height"
-                type="text"
-                placeholder="請輸入身高"
-                class="bg-[#424242] text-[24px] text-white pl-3 border-2 rounded-md border-[#FFD366] outline-none"
-              />
-              <label for="weight" class="text-[18px] mt-[20px]">體重 kg</label>
-              <input
-                type="number"
-                name="weight"
-                id="weight"
-                placeholder="請輸入體重"
-                class="bg-[#424242] text-[24px] text-white pl-3 border-2 rounded-md border-[#FFD366] outline-none"
-              />
-            </form>
-          </div>
-          <div class="">
-            <button type="button" id="result">
-              <div
-                class="w-[100px] h-[100px] rounded-full bg-[#FFD366] hover:bg-gray-300 text-center text-[25px] align-middle py-[35%]"
-              >
-                看結果
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+  <header class="bg-[#424242]">
+    <div class="container mx-auto">
+      <div class="py-[50px] flex flex-row justify-evenly items-center">
+        <div><img src="./assets/BMICLogo.png" alt="" /></div>
+
+        <div class="">
+          <form action="" class="flex flex-col text-[#FFD366]">
+            <label for="height" class="text-[18px] bg-[#424242]">身高 cm</label>
+            <input name="height" id="height" type="text" placeholder="請輸入身高"
+              class="bg-[#424242] text-[24px] text-white pl-3 border-2 rounded-md border-[#FFD366] outline-none" />
+            <label for="weight" class="text-[18px] mt-[20px]">體重 kg</label>
+            <input type="number" name="weight" id="weight" placeholder="請輸入體重"
+              class="bg-[#424242] text-[24px] text-white pl-3 border-2 rounded-md border-[#FFD366] outline-none" />
+          </form>
+        </div>
+
+        <div class="">
+          <button type="button" id="result">
+            <div
+              class="w-[100px] h-[100px] rounded-full bg-[#FFD366] hover:shadow-[0_1px_6px_3px] hover:shadow-amber-200/50 active:bg-[#DEA821] text-center text-[25px] align-middle py-[35%]">
+              看結果
+            </div>
+          </button>
+          <div class="flex flex-row items-center hidden">
+            <div
+              class="w-[120px] h-[120px] rounded-full border-[6px] border-[#86D73F] text-center  items-center relative ">
+              <div class="text-[32px] text-[#86D73F] absolute left-[13px] top-[30px]">20.90
+
               </div>
-            </button>
+              <div class="text-[#86D73F] text-[14px] absolute left-[40px] bottom-[20px]">BMI</div>
+
+              <button type="button"
+                class="w-[30px] h-[30px] bg-[#86D73F] rounded-full border-[3px] border-neutral-700  absolute bottom-0 right-0 z-50">
+                <img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1">
+              </button>
+            </div>
+            <diV class="text-[32px] text-[#86D73F] ml-[10px]">理想</diV>
+          </div>
+
+          <div class="flex flex-row items-center hidden">
+            <div
+              class="w-[120px] h-[120px] rounded-full border-[6px] border-[#31BAF9] text-center  items-center relative ">
+              <div class="text-[32px] text-[#31BAF9] absolute left-[13px] top-[30px]">20.90
+
+              </div>
+              <div class="text-[#31BAF9] text-[14px] absolute left-[40px] bottom-[20px]">BMI</div>
+
+              <button type="button"
+                class="w-[30px] h-[30px] bg-[#31BAF9] rounded-full border-[3px] border-neutral-700  absolute bottom-0 right-0 z-50">
+                <img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1">
+              </button>
+            </div>
+            <diV class="text-[32px] text-[#31BAF9] ml-[10px]">過輕</diV>
+          </div>
+
+          <div class="flex flex-row items-center hidden">
+            <div
+              class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF982D] text-center  items-center relative ">
+              <div class="text-[32px] text-[#FF982D] absolute left-[13px] top-[30px]">20.90
+
+              </div>
+              <div class="text-[#FF982D] text-[14px] absolute left-[40px] bottom-[20px]">BMI</div>
+
+              <button type="button"
+                class="w-[30px] h-[30px] bg-[#FF982D] rounded-full border-[3px] border-neutral-700  absolute bottom-0 right-0 z-50">
+                <img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1">
+              </button>
+            </div>
+            <diV class="text-[32px] text-[#FF982D] ml-[10px]">過重</diV>
+          </div>
+
+          <div class="flex flex-row items-center hidden">
+            <div
+              class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF6C03] text-center  items-center relative ">
+              <div class="text-[32px] text-[#FF6C03] absolute left-[13px] top-[30px]">20.90
+
+              </div>
+              <div class="text-[#FF6C03] text-[14px] absolute left-[40px] bottom-[20px]">BMI</div>
+
+              <button type="button"
+                class="w-[30px] h-[30px] bg-[#FF6C03] rounded-full border-[3px] border-neutral-700  absolute bottom-0 right-0 z-50">
+                <img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1">
+              </button>
+            </div>
+            <diV class="text-[32px] text-[#FF6C03] ml-[10px]">輕度肥胖</diV>
+          </div>
+
+          <div class="flex flex-row items-center hidden">
+            <div
+              class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF6C03] text-center  items-center relative ">
+              <div class="text-[32px] text-[#FF6C03] absolute left-[13px] top-[30px]">20.90
+
+              </div>
+              <div class="text-[#FF6C03] text-[14px] absolute left-[40px] bottom-[20px]">BMI</div>
+
+              <button type="button"
+                class="w-[30px] h-[30px] bg-[#FF6C03] rounded-full border-[3px] border-neutral-700  absolute bottom-0 right-0 z-50">
+                <img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1">
+              </button>
+            </div>
+            <diV class="text-[32px] text-[#FF6C03] ml-[10px]">中度肥胖</diV>
+          </div>
+
+          <div class="flex flex-row items-center hidden">
+            <div
+              class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF1200] text-center  items-center relative ">
+              <div class="text-[32px] text-[#FF1200] absolute left-[13px] top-[30px]">20.90
+
+              </div>
+              <div class="text-[#FF1200] text-[14px] absolute left-[40px] bottom-[20px]">BMI</div>
+
+              <button type="button"
+                class="w-[30px] h-[30px] bg-[#FF1200] rounded-full border-[3px] border-neutral-700  absolute bottom-0 right-0 z-50">
+                <img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1">
+              </button>
+            </div>
+            <diV class="text-[32px] text-[#FF1200] ml-[10px]">重度肥胖</diV>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="my-[50px]">
+    <div class="container mx-auto">
+      <div class="text-center text-[24px]">BMI紀錄</div>
+      <div id="bmiList" class=" mt-[30px]">
+        <div class="flex flex-row justify-between bg-white shadow w-1/2 mx-[25%]">
+          <div class="bg-[#86D73F] shadow-md">
+            <span class="invisible">1</span>
+          </div>
+          <div class="py-3">
+            <span class="lg:text-[20px]">理想</span>
+          </div>
+          <div class="p-3">
+            <span class="text-[12px]">BMI</span>
+            <span class="lg:text-[20px]">20.90</span>
+          </div>
+          <div class="p-3">
+            <span class="text-[12px]">weight</span>
+            <span class="lg:text-[20px]">70</span>
+            <span class="lg:text-[20px]">kg</span>
+          </div>
+          <div class="p-3">
+            <span class="text-[12px]">height</span>
+            <span class="lg:text-[20px]">180</span>
+            <span class="lg:text-[20px]">cm</span>
+          </div>
+          <div class="p-3">
+            <span class="text-[12px]">06-19-2017</span>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </main>
 
-    <main class="my-[50px]">
-      <div class="container mx-auto">
-        <div class="text-center text-[24px]">BMI紀錄</div>
-        <div id="bmiList" class="">
-          <div class="flex flex-row justify-between bg-white shadow w-1/2 mx-[25%]">
-            <div class="bg-[#86D73F] shadow">
-              <span class="invisible">1</span>
-            </div>
-            <div class="py-3">
-              <span class="lg:text-[20px]">理想</span>
-            </div>
-            <div class="p-3">
-              <span class="text-[12px]">BMI</span>
-              <span class="lg:text-[20px]">20.90</span>
-            </div>
-            <div class="p-3">
-              <span class="text-[12px]">weight</span>
-              <span class="lg:text-[20px]">70</span>
-              <span class="lg:text-[20px]">kg</span>
-            </div>
-            <div class="p-3">
-              <span class="text-[12px]">height</span>
-              <span class="lg:text-[20px]">180</span>
-              <span class="lg:text-[20px]">cm</span>
-            </div>
-            <div class="p-3">
-              <span class="text-[12px]">06-19-2017</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+  <footer class="bg-[#FFD366] absolute bottom-0 left-0 right-0">
+    <div class="container mx-auto py-5 flex justify-center">
+      <img src="./assets/BMICLogo-2.png" alt="" class="text-[#FFD366]" />
+    </div>
+  </footer>
+  <script src="./js/bmi.js"></script>
+</body>
 
-    <footer class="bg-[#FFD366] absolute bottom-0 left-0 right-0">
-      <div class="container mx-auto py-5 flex justify-center">
-        <img src="./assets/BMICLogo-2.png" alt="" class="text-[#FFD366]" />
-      </div>
-    </footer>
-    <script src="./js/bmi.js"></script>
-  </body>
 </html>
