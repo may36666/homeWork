@@ -44,7 +44,8 @@
                 看結果
               </div>
             </button>
-            <div class="flex flex-row items-center ">
+            <div class="flex flex-row items-center hidden"
+            id="standardWeight">
               <div
                 class="w-[120px] h-[120px] rounded-full border-[6px] border-[#86D73F] text-center items-center relative"
               >
@@ -52,7 +53,7 @@
                   class="text-[32px] text-[#86D73F] absolute left-[13px] top-[30px] titleBmi"
                   id=""
                 >
-                  20.90
+                  
                 </div>
                 <div
                   class="text-[#86D73F] text-[14px] absolute left-[40px] bottom-[20px]"
@@ -62,26 +63,28 @@
 
                 <button
                   type="button"
-                  class="w-[30px] h-[30px] bg-[#86D73F] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50"
+                  class="w-[30px] h-[30px] bg-[#86D73F] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45 "
+                  id="standardResetBtn"
                 >
                   <img
                     src="./assets/icons_loop.png"
                     alt=""
-                    class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1"
+                    class="pl-[5px] contrast-200  "
                   />
                 </button>
               </div>
               <div class="text-[32px] text-[#86D73F] ml-[10px]">理想</div>
             </div>
 
-            <div class="flex flex-row items-center hidden">
+            <div class="flex flex-row items-center hidden"
+            id="underWeight">
               <div
                 class="w-[120px] h-[120px] rounded-full border-[6px] border-[#31BAF9] text-center items-center relative"
               >
                 <div
                   class="text-[32px] text-[#31BAF9] absolute left-[13px] top-[30px] titleBmi"
                 >
-                  20.90
+                
                 </div>
                 <div
                   class="text-[#31BAF9] text-[14px] absolute left-[40px] bottom-[20px]"
@@ -91,26 +94,28 @@
 
                 <button
                   type="button"
-                  class="w-[30px] h-[30px] bg-[#31BAF9] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50"
+                  class="w-[30px] h-[30px] bg-[#31BAF9] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45 "
+                  id="underResetBtn"
                 >
                   <img
                     src="./assets/icons_loop.png"
                     alt=""
-                    class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1"
+                    class="pl-[5px] contrast-200 "
                   />
                 </button>
               </div>
               <div class="text-[32px] text-[#31BAF9] ml-[10px]">過輕</div>
             </div>
 
-            <div class="flex flex-row items-center hidden">
+            <div class="flex flex-row items-center hidden"
+            id="fatWeight">
               <div
                 class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF982D] text-center items-center relative"
               >
                 <div
                   class="text-[32px] text-[#FF982D] absolute left-[13px] top-[30px] titleBmi"
                 >
-                  20.90
+                  
                 </div>
                 <div
                   class="text-[#FF982D] text-[14px] absolute left-[40px] bottom-[20px]"
@@ -120,26 +125,28 @@
 
                 <button
                   type="button"
-                  class="w-[30px] h-[30px] bg-[#FF982D] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50"
+                  class="w-[30px] h-[30px] bg-[#FF982D] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45"
+                  id="fatResetBtn"
                 >
                   <img
                     src="./assets/icons_loop.png"
                     alt=""
-                    class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1"
+                    class="pl-[5px] contrast-200"
                   />
                 </button>
               </div>
               <div class="text-[32px] text-[#FF982D] ml-[10px]">過重</div>
             </div>
 
-            <div class="flex flex-row items-center hidden">
+            <div class="flex flex-row items-center hidden"
+            id="mildFatWeight">
               <div
                 class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF6C03] text-center items-center relative"
               >
                 <div
                   class="text-[32px] text-[#FF6C03] absolute left-[13px] top-[30px] titleBmi"
                 >
-                  20.90
+                  
                 </div>
                 <div
                   class="text-[#FF6C03] text-[14px] absolute left-[40px] bottom-[20px]"
@@ -149,26 +156,28 @@
 
                 <button
                   type="button"
-                  class="w-[30px] h-[30px] bg-[#FF6C03] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50"
+                  class="w-[30px] h-[30px] bg-[#FF6C03] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45"
+                  id="mildFatResetBtn"
                 >
                   <img
                     src="./assets/icons_loop.png"
                     alt=""
-                    class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1"
+                    class="pl-[5px] contrast-200"
                   />
                 </button>
               </div>
               <div class="text-[32px] text-[#FF6C03] ml-[10px]">輕度肥胖</div>
             </div>
 
-            <div class="flex flex-row items-center hidden">
+            <div class="flex flex-row items-center hidden"
+            id="moderatelyFatWeight">
               <div
                 class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF6C03] text-center items-center relative"
               >
                 <div
                   class="text-[32px] text-[#FF6C03] absolute left-[13px] top-[30px] titleBmi"
                 >
-                  20.90
+                  
                 </div>
                 <div
                   class="text-[#FF6C03] text-[14px] absolute left-[40px] bottom-[20px]"
@@ -179,6 +188,7 @@
                 <button
                   type="button"
                   class="w-[30px] h-[30px] bg-[#FF6C03] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50"
+                  id="moderatelyResetBtn"
                 >
                   <img
                     src="./assets/icons_loop.png"
@@ -190,14 +200,15 @@
               <div class="text-[32px] text-[#FF6C03] ml-[10px]">中度肥胖</div>
             </div>
 
-            <div class="flex flex-row items-center hidden">
+            <div class="flex flex-row items-center hidden"
+            id="severeFatWeight">
               <div
                 class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF1200] text-center items-center relative"
               >
                 <div
                   class="text-[32px] text-[#FF1200] absolute left-[13px] top-[30px] titleBmi"
                 >
-                  20.90
+                  
                 </div>
                 <div
                   class="text-[#FF1200] text-[14px] absolute left-[40px] bottom-[20px]"
@@ -207,12 +218,13 @@
 
                 <button
                   type="button"
-                  class="w-[30px] h-[30px] bg-[#FF1200] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50"
+                  class="w-[30px] h-[30px] bg-[#FF1200] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45"
+                  id="severeResetBtn"
                 >
                   <img
                     src="./assets/icons_loop.png"
                     alt=""
-                    class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1"
+                    class="pl-[5px] contrast-200"
                   />
                 </button>
               </div>
