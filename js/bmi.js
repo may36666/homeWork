@@ -17,6 +17,7 @@
     let moderatelyResetBtn = document.getElementById('moderatelyResetBtn');
     let severeResetBtn = document.getElementById('severeResetBtn');
 
+    //計算BMI變更圖示
     result.addEventListener('click',function(e){
         bmiCountShow();
         result.classList.toggle('hidden');
@@ -81,3 +82,7 @@
         result.classList.toggle('hidden');
         severeFatWeight.classList.toggle('hidden');  
     })
+
+    //紀錄BMI
+
+    
