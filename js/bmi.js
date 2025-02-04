@@ -85,4 +85,6 @@
 
     //紀錄BMI
 
+    let bmiList = document.getElementById('bmiList');
+    let data = JSON.parse(localStorage.getItem('listData')) || [];
     
