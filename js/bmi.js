@@ -85,6 +85,14 @@
 
     //紀錄BMI
 
+    let bmiColor = {
+        理想:"bg-[#86D73F]",
+        過輕:"bg-[#31BAF9]",
+        過重:"bg-[#FF982D]",
+        輕度肥胖:"bg-[#FF6C03]",
+        中度肥胖:"bg-[#FF6C03]",
+        重度肥胖:"bg-[#FF1200]"
+    }
     let bmiList = document.getElementById('bmiList');
     let data = JSON.parse(localStorage.getItem('listData')) || [];
     
