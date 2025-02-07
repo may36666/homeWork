@@ -1468,6 +1468,8 @@ let travel ={
     }
     }
 
+    
+
     //旅遊網
     let area = document.getElementById('areaId');
     let mainTitleName = document.getElementById('mainTitleName');
@@ -1481,6 +1483,8 @@ let travel ={
         let select = e.target.value;
         mainTitleName.textContent = select;      
     },false);
+
+ 
 
     area.addEventListener('change',updateMainList,false);
 
