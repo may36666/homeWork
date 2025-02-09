@@ -55,6 +55,7 @@
             ResetBtn.addEventListener('click',function(){
                 result.innerHTML ='<button type="button" id="resultBtn"><div class="w-[100px] h-[100px] rounded-full bg-[#FFD366] hover:shadow-[0_1px_6px_3px] hover:shadow-amber-200/50 active:bg-[#DEA821] text-center text-[25px] align-middle py-[35%]">看結果</div></button>';
             })
+            
         }
         else if(bmi>=19 && bmi<24){
             
