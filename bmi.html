@@ -36,22 +36,23 @@
             </form>
           </div>
 
-          <div class="">
-            <button type="button" id="result" class="">
+          <div id="result">
+            <button type="button" id="resultBtn">
               <div
                 class="w-[100px] h-[100px] rounded-full bg-[#FFD366] hover:shadow-[0_1px_6px_3px] hover:shadow-amber-200/50 active:bg-[#DEA821] text-center text-[25px] align-middle py-[35%]"
               >
                 看結果
               </div>
             </button>
+
             <div class="flex flex-row items-center hidden relative"
-            id="standardWeight">
+            id="titleWeight">
               <div
                 class="w-[120px] h-[120px] rounded-full border-[6px] border-[#86D73F] text-center items-center relative"
               >
                 <div
-                  class="text-[32px] text-[#86D73F] absolute left-[13px] top-[30px] titleBmi"
-                  id=""
+                  class="text-[32px] text-[#86D73F] absolute left-[13px] top-[30px] "
+                  id="titleBmi"
                 >
                   
                 </div>
@@ -64,7 +65,7 @@
                 <button
                   type="button"
                   class="w-[30px] h-[30px] bg-[#86D73F] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45 "
-                  id="standardResetBtn"
+                  id="ResetBtn"
                 >
                   <img
                     src="./assets/icons_loop.png"
@@ -74,161 +75,6 @@
                 </button>
               </div>
               <div class="text-[32px] text-[#86D73F] absolute right-[-80px]">理想</div>
-            </div>
-
-            <div class="flex flex-row items-center relative hidden"
-            id="underWeight">
-              <div
-                class="w-[120px] h-[120px] rounded-full border-[6px] border-[#31BAF9] text-center items-center relative"
-              >
-                <div
-                  class="text-[32px] text-[#31BAF9] absolute left-[13px] top-[30px] titleBmi"
-                >
-                
-                </div>
-                <div
-                  class="text-[#31BAF9] text-[14px] absolute left-[40px] bottom-[20px]"
-                >
-                  BMI
-                </div>
-
-                <button
-                  type="button"
-                  class="w-[30px] h-[30px] bg-[#31BAF9] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45 "
-                  id="underResetBtn"
-                >
-                  <img
-                    src="./assets/icons_loop.png"
-                    alt=""
-                    class="pl-[5px] contrast-200 "
-                  />
-                </button>
-              </div>
-              <div class="text-[32px] text-[#31BAF9] right-[-80px]">過輕</div>
-            </div>
-
-            <div class="flex flex-row items-center relative hidden"
-            id="fatWeight">
-              <div
-                class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF982D] text-center items-center relative"
-              >
-                <div
-                  class="text-[32px] text-[#FF982D] absolute left-[13px] top-[30px] titleBmi"
-                >
-                  
-                </div>
-                <div
-                  class="text-[#FF982D] text-[14px] absolute left-[40px] bottom-[20px]"
-                >
-                  BMI
-                </div>
-
-                <button
-                  type="button"
-                  class="w-[30px] h-[30px] bg-[#FF982D] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45"
-                  id="fatResetBtn"
-                >
-                  <img
-                    src="./assets/icons_loop.png"
-                    alt=""
-                    class="pl-[5px] contrast-200"
-                  />
-                </button>
-              </div>
-              <div class="text-[32px] text-[#FF982D] right-[-80px]">過重</div>
-            </div>
-
-            <div class="flex flex-row items-center relative hidden"
-            id="mildFatWeight">
-              <div
-                class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF6C03] text-center items-center relative"
-              >
-                <div
-                  class="text-[32px] text-[#FF6C03] absolute left-[13px] top-[30px] titleBmi"
-                >
-                  
-                </div>
-                <div
-                  class="text-[#FF6C03] text-[14px] absolute left-[40px] bottom-[20px]"
-                >
-                  BMI
-                </div>
-
-                <button
-                  type="button"
-                  class="w-[30px] h-[30px] bg-[#FF6C03] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45"
-                  id="mildFatResetBtn"
-                >
-                  <img
-                    src="./assets/icons_loop.png"
-                    alt=""
-                    class="pl-[5px] contrast-200"
-                  />
-                </button>
-              </div>
-              <div class="text-[32px] text-[#FF6C03] right-[-80px]">輕度肥胖</div>
-            </div>
-
-            <div class="flex flex-row items-center relative hidden"
-            id="moderatelyFatWeight">
-              <div
-                class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF6C03] text-center items-center relative"
-              >
-                <div
-                  class="text-[32px] text-[#FF6C03] absolute left-[13px] top-[30px] titleBmi"
-                >
-                  
-                </div>
-                <div
-                  class="text-[#FF6C03] text-[14px] absolute left-[40px] bottom-[20px]"
-                >
-                  BMI
-                </div>
-
-                <button
-                  type="button"
-                  class="w-[30px] h-[30px] bg-[#FF6C03] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50"
-                  id="moderatelyResetBtn"
-                >
-                  <img
-                    src="./assets/icons_loop.png"
-                    alt=""
-                    class="pl-[5px] contrast-200 hover:-rotate-45 hover:pt-1"
-                  />
-                </button>
-              </div>
-              <div class="text-[32px] text-[#FF6C03] right-[-80px]">中度肥胖</div>
-            </div>
-
-            <div class="flex flex-row items-center relative hidden"
-            id="severeFatWeight">
-              <div
-                class="w-[120px] h-[120px] rounded-full border-[6px] border-[#FF1200] text-center items-center relative"
-              >
-                <div
-                  class="text-[32px] text-[#FF1200] absolute left-[13px] top-[30px] titleBmi"
-                >
-                  
-                </div>
-                <div
-                  class="text-[#FF1200] text-[14px] absolute left-[40px] bottom-[20px]"
-                >
-                  BMI
-                </div>
-
-                <button
-                  type="button"
-                  class="w-[30px] h-[30px] bg-[#FF1200] rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45"
-                  id="severeResetBtn"
-                >
-                  <img
-                    src="./assets/icons_loop.png"
-                    alt=""
-                    class="pl-[5px] contrast-200"
-                  />
-                </button>
-              </div>
-              <div class="text-[32px] text-[#FF1200] right-[-80px]">重度肥胖</div>
             </div>
           </div>
         </div>
