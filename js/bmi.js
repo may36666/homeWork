@@ -154,9 +154,28 @@
             listTime:nowtime
         };
         data.push(todo);
+        updateMainList(data);
         localStorage.setItem('listData',JSON.stringify(data));
     }
 
-    function updateMainList(){
-        
+    function updateMainList(items){
+        let str ='';
+        let itemsLen= items.length;
+        for(let i=0; i<itemsLen; i++){
+            str += '<div class="flex flex-row justify-between bg-white shadow w-1/2 mx-[25%]"><div class=" '+items[i].listBgColor+' shadow-md"><span class="invisible">1</span></div><div class="py-3"><span class="lg:text-[20px]">'+items[i].listBMI+'</span></div><div class="p-3"><span class="text-[12px]">BMI</span><span class="lg:text-[20px]">'+items[i].listBmiVal+'</span></div>
+          <div class="p-3">
+            <span class="text-[12px]">weight</span>
+            <span class="lg:text-[20px]">70</span>
+            <span class="lg:text-[20px]">kg</span>
+          </div>
+          <div class="p-3">
+            <span class="text-[12px]">height</span>
+            <span class="lg:text-[20px]">180</span>
+            <span class="lg:text-[20px]">cm</span>
+          </div>
+          <div class="p-3">
+            <span class="text-[12px]">06-19-2017</span>
+          </div>
+        </div>'
+        }
     }
