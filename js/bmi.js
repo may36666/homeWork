@@ -49,7 +49,7 @@
         bmiCount();
         if(bmi<19){
             resultBtn.classList.toggle('hidden')
-            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[0].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[0].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[0].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[0].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[0].textColor+' absolute right-[-80px]" id="bmiStr">'+bmiColor[0].BMI+'</div></div>';
+            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[0].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[0].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[0].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[0].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[0].textColor+' absolute right-[-80px] " id="bmiStr">'+bmiColor[0].BMI+'</div></div>';
             let titleBmi = document.getElementById('titleBmi');
             let ResetBtn = document.getElementById('ResetBtn');
             let bmiStr =document.getElementById('bmiStr');
@@ -64,42 +64,47 @@
             let ResetBtn = document.getElementById('ResetBtn');
             let bmiStr =document.getElementById('bmiStr');
             titleBmi.textContent = bmi;
+            addData();
             ResetBtn.addEventListener('click',reset)
         }
         else if(bmi>=24 && bmi <27){
             resultBtn.classList.toggle('hidden')
-            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[2].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[2].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[2].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[2].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[2].textColor+' absolute right-[-80px] id="bmiStr">'+bmiColor[2].BMI+'</div></div>';
+            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[2].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[2].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[2].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[2].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[2].textColor+' absolute right-[-80px]" id="bmiStr">'+bmiColor[2].BMI+'</div></div>';
             let titleBmi = document.getElementById('titleBmi');
             let ResetBtn = document.getElementById('ResetBtn');
             let bmiStr =document.getElementById('bmiStr');
             titleBmi.textContent = bmi;
+            addData();
             ResetBtn.addEventListener('click',reset)
         }
         else if(bmi>=27 && bmi <30){
             resultBtn.classList.toggle('hidden')
-            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[3].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[3].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[3].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[3].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[3].textColor+' absolute right-[-130px] id="bmiStr">'+bmiColor[3].BMI+'</div></div>';
+            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[3].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[3].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[3].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[3].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[3].textColor+' absolute right-[-130px]" id="bmiStr">'+bmiColor[3].BMI+'</div></div>';
             let titleBmi = document.getElementById('titleBmi');
             let ResetBtn = document.getElementById('ResetBtn');
             let bmiStr =document.getElementById('bmiStr');
             titleBmi.textContent = bmi;
+            addData();
             ResetBtn.addEventListener('click',reset)
         }
         else if(bmi>=30 && bmi <35){
             resultBtn.classList.toggle('hidden')
-            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[4].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[4].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[4].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[4].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[4].textColor+' absolute right-[-130px] id="bmiStr">'+bmiColor[4].BMI+'</div></div>';
+            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[4].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[4].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[4].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[4].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[4].textColor+' absolute right-[-130px]" id="bmiStr">'+bmiColor[4].BMI+'</div></div>';
             let titleBmi = document.getElementById('titleBmi');
             let ResetBtn = document.getElementById('ResetBtn');
             let bmiStr =document.getElementById('bmiStr');
             titleBmi.textContent = bmi;
+            addData();
             ResetBtn.addEventListener('click',reset)
         }
         else{
             resultBtn.classList.toggle('hidden')
-            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[5].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[5].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[5].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[5].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[5].textColor+' absolute right-[-130px] id="bmiStr">'+bmiColor[5].BMI+'</div></div>';
+            resultList.innerHTML ='<div class="flex flex-row items-center  relative"id="titleWeight"> <div class="w-[120px] h-[120px] rounded-full border-[6px] '+ bmiColor[5].borserColor +' text-center items-center relative"><div class="text-[32px] '+ bmiColor[5].textColor +' absolute left-[13px] top-[30px]"id="titleBmi"> </div><div class="'+ bmiColor[5].textColor +' text-[14px] absolute left-[40px] bottom-[20px]">BMI</div><button type="button" class="w-[30px] h-[30px] '+bmiColor[5].bgColor+' rounded-full border-[3px] border-neutral-700 absolute bottom-0 right-0 z-50 hover:-rotate-45" id="ResetBtn"><img src="./assets/icons_loop.png" alt="" class="pl-[5px] contrast-200 "/></button></div><div class="text-[32px] '+bmiColor[5].textColor+' absolute right-[-130px]" id="bmiStr">'+bmiColor[5].BMI+'</div></div>';
             let titleBmi = document.getElementById('titleBmi');
             let ResetBtn = document.getElementById('ResetBtn');
             let bmiStr =document.getElementById('bmiStr');
             titleBmi.textContent = bmi;
+            addData();
             ResetBtn.addEventListener('click',reset);
 
         }
@@ -130,7 +135,7 @@
     
     let bmiList = document.getElementById('bmiList');
     let data = JSON.parse(localStorage.getItem('listData')) || [];
-    
+    updateMainList(data);
 
 
     //新增localstorage
@@ -142,12 +147,12 @@
         for (let i = 0; i< bmiColorLen; i++) {
           if(bmiColor[i].BMI == bmiStr.textContent){
             color = bmiColor[i].bgColor;
-            bmiVal = bmiColor[i].BMI;
+            bmitext = bmiColor[i].BMI;
           }
         }
         let todo ={
             listBgColor:color,
-            listBMI:bmiVal,
+            listBMI:bmitext,
             listBmiVal:bmi,
             listweight:weight.value,
             listheight:height.value,
@@ -162,20 +167,7 @@
         let str ='';
         let itemsLen= items.length;
         for(let i=0; i<itemsLen; i++){
-            str += '<div class="flex flex-row justify-between bg-white shadow w-1/2 mx-[25%]"><div class=" '+items[i].listBgColor+' shadow-md"><span class="invisible">1</span></div><div class="py-3"><span class="lg:text-[20px]">'+items[i].listBMI+'</span></div><div class="p-3"><span class="text-[12px]">BMI</span><span class="lg:text-[20px]">'+items[i].listBmiVal+'</span></div>
-          <div class="p-3">
-            <span class="text-[12px]">weight</span>
-            <span class="lg:text-[20px]">70</span>
-            <span class="lg:text-[20px]">kg</span>
-          </div>
-          <div class="p-3">
-            <span class="text-[12px]">height</span>
-            <span class="lg:text-[20px]">180</span>
-            <span class="lg:text-[20px]">cm</span>
-          </div>
-          <div class="p-3">
-            <span class="text-[12px]">06-19-2017</span>
-          </div>
-        </div>'
+            str += '<div class="flex flex-row justify-between bg-white shadow w-1/2 mx-[25%] mb-5"><div class=" '+items[i].listBgColor+' shadow-md"><span class="invisible">1</span></div><div class="py-3"><span class="lg:text-[20px]">'+items[i].listBMI+'</span></div><div class="p-3"><span class="text-[12px]">BMI</span><span class="lg:text-[20px]">'+items[i].listBmiVal+'</span></div><div class="p-3"><span class="text-[12px]">weight</span><span class="lg:text-[20px]">'+items[i].listweight+'</span><span class="lg:text-[20px]">kg</span></div><div class="p-3"><span class="text-[12px]">height</span><span class="lg:text-[20px]">'+items[i].listheight+'</span><span class="lg:text-[20px]">cm</span></div><div class="p-3"><span class="text-[12px]">'+items[i].listTime+'</span></div></div>'
         }
+        bmiList.innerHTML = str;
     }
