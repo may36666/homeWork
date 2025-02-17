@@ -5,7 +5,7 @@ let travel ={};
 let xhr = new XMLHttpRequest();
 xhr.open('get','https://raw.githubusercontent.com/hexschool/KCGTravel/master/datastore_search.json',true);
 xhr.send(null);
-xhr.onload =function(){
+xhr.onload =function (){
     travel =JSON.parse(xhr.responseText);
     console.log(travel);
 }
