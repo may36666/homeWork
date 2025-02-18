@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高雄旅遊資訊</title>
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>高雄旅遊資訊</title>
-</head>
-<script src="https://cdn.tailwindcss.com"></script>
+  <body>
+    <header
+      class="bg-no-repeat bg-cover h-[380px]"
+      style="background-image: url(./assets/the-urban-landscape-1698285.png)"
+    >
+      <div class="container mx-auto">
+        <div
+          class="text-white text-center text-[40px] tracking-[3.89px] pt-[4.3%]"
+        >
+          高雄旅遊資訊
+        </div>
+        <div class="mt-[11%] flex justify-center">
+          <form
+            action=""
+            method="post"
+            class="w-[45%] border-[3px] border-white rounded-sm relative"
+          >
+            <select
+              id="areaId"
+              class="h-full opacity-75 font-black appearance-none p-3 w-full outline-none"
+            >
+              <option value="">--請選擇行政區--</option>
+            </select>
+            <div class="z-50 absolute right-3 inset-y-5 pointer-events-none">
+              <img src="./assets/icons_down.png" alt="" class="" />
+            </div>
+          </form>
+        </div>
 
-<body>
-  <header class="bg-no-repeat bg-cover h-[380px]"
-    style="background-image: url(./assets/the-urban-landscape-1698285.png)">
-    <div class="container mx-auto">
-      <div class="text-white text-center text-[40px] tracking-[3.89px] pt-[4.3%]">
-        高雄旅遊資訊
-      </div>
-      <div class="mt-[11%] flex justify-center">
-        <form action="" method="post" class="w-[45%] border-[3px] border-white rounded-sm relative">
-          <select id="areaId" class="h-full opacity-75 font-black appearance-none p-3 w-full outline-none">
-            <option value="">--請選擇行政區--</option>
-          </select>
-          <div class="z-50 absolute right-3 inset-y-5 pointer-events-none">
-            <img src="./assets/icons_down.png" alt="" class="" />
-          </div>
-        </form>
-      </div>
-
-      <div class="flex justify-center mt-[4%]">
-        <div class="w-[80%] h-[100px] bg-white rounded-md shadow pt-2 pl-5 font-black">
-          熱門行政區
-          <div class="mt-[10px] h-[50%] px-5 lg:space-x-[20px] lg:text-xl" id="hotButton">
-            
+        <div class="flex justify-center mt-[4%]">
+          <div
+            class="w-[80%] h-[100px] bg-white rounded-md shadow pt-2 pl-5 font-black"
+          >
+            熱門行政區
+            <div
+              class="mt-[10px] h-[50%] px-5 lg:space-x-[20px] lg:text-xl"
+              id="hotButton"
+            ></div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="container mx-auto my-[6%] flex flex-col relative">
-    <div class="flex justify-center border-2 rounded-full w-[30px] h-[30px] absolute left-[49%] bg-white mt-[88px]">
-      <img src="./assets/icons_down.png" alt="" class="p-[6px]" />
-    </div>
-    <div class="border-t-[2px] border-[#559AC8] border-dashed mt-[100px] w-[80%] mx-auto"></div>
-  </div>
-  <main class="container mx-auto">
-    <div class="text-center text-3xl" id="mainTitleName">
-
-    </div>
-    <div class="grid grid-cols-2 gap-6 mx-[30px] place-items-center mt-[50px] " id="mainListId">
-
-    </div>
-  </main>
-
-  <footer class="bg-blue-600">
-    <div class="container mx-auto mt-[100px] text-center space-y-4">
-      <div class="pt-4 text-white">
-        高雄旅遊網
-      </div> 
-      <div class="pb-4 text-yellow-400">
-        資料來源:高雄市政府
+    </header>
+    <div class="container mx-auto my-[6%] flex flex-col relative">
+      <div
+        class="flex justify-center border-2 rounded-full w-[30px] h-[30px] absolute left-[49%] bg-white mt-[88px]"
+      >
+        <img src="./assets/icons_down.png" alt="" class="p-[6px]" />
       </div>
+      <div
+        class="border-t-[2px] border-[#559AC8] border-dashed mt-[100px] w-[80%] mx-auto"
+      ></div>
     </div>
+    <main class="container mx-auto">
+      <div class="text-center text-3xl" id="mainTitleName"></div>
+      <div
+        class="grid grid-cols-2 gap-6 mx-[30px] place-items-center mt-[50px]"
+        id="mainListId"
+      ></div>
+    </main>
+    <div class="h-[100px]"></div>
+    <footer class="bg-blue-600">
+      <div class="container mx-auto mt-[100px] text-center space-y-4">
+        <div class="pt-4 text-white">高雄旅遊網</div>
+        <div class="pb-4 text-yellow-400">資料來源:高雄市政府</div>
+      </div>
+    </footer>
 
-  </footer>
-
-  <script src="./js/all.js"></script>
-</body>
-
+    <script src="./js/all.js"></script>
+  </body>
 </html>
