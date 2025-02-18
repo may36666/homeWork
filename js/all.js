@@ -41,7 +41,7 @@ xhr.onload =function (){
     area.innerHTML = str;
     
 
-    
+
     area.addEventListener('change',function (e){
         let select = e.target.value;
         mainTitleName.textContent = select;      
@@ -82,6 +82,7 @@ xhr.onload =function (){
 
     hotBotton.addEventListener('click',updateMainList);
     }
+    
     else{
         console.log('資料錯誤');
     }
